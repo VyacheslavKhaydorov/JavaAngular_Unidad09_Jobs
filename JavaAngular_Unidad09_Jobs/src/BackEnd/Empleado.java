@@ -42,10 +42,10 @@ public class Empleado {
 		this.sueldo = sueldo;
 		this.categoria = categoria;
 		
-		//Llamada al mÈtodo de control de categoria
+		//Llamada al mÔøΩtodo de control de categoria
 		this.categoria = categoriaCorrecta(this.categoria);
 		
-		//Llamada al mÈtodo de ajuste de sueldo
+		//Llamada al mÔøΩtodo de ajuste de sueldo
 		this.sueldo = sueldoAjustadoPorCategoria(this.sueldo, this.categoria);
 	}
 	
@@ -106,7 +106,7 @@ public class Empleado {
 	}
 	
 	
-	//MÈtodo para ajustar el sueldo seg˙n la categoria
+	//MÔøΩtodo para ajustar el sueldo segÔøΩn la categoria
 	public double sueldoAjustadoPorCategoria (double sueldo, String categoria) {
 		
 		switch (categoria) {
@@ -131,7 +131,7 @@ public class Empleado {
 	}
 	
 	
-	//MÈtodo de control sobre el rango de sueldos
+	//MÔøΩtodo de control sobre el rango de sueldos
 	public boolean controlRangoSueldo (double sueldo, String categoria) {
 		//Variables
 		boolean sueldoCorrecto = false;
@@ -144,6 +144,9 @@ public class Empleado {
 		case "BOSS":
 			if (sueldo > SUELDO_BOSS_MIN)
 				sueldoCorrecto = true;
+		
+		//hay que a√±adir un else sueldo correcto a false en senior mid y junior	
+			
 		}
 		
 		return sueldoCorrecto;
