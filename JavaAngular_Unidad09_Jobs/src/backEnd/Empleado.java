@@ -157,9 +157,7 @@ public class Empleado {
 	//Metodo de control de categoria
 	public String categoriaCorrecta (String categoria) {
 		
-		categoria.toUpperCase();	//Pasamos la cadena a mayusculas
-		
-		switch (categoria) {
+		switch (categoria.toUpperCase()) {
 			case "MANAGER":
 				break;
 			case "BOSS":
@@ -172,7 +170,7 @@ public class Empleado {
 				categoria = CATEGORIA_DEFAULT;
 		}
 		
-		return categoria;
+		return categoria.toUpperCase();
 		
 	}
 	

@@ -18,7 +18,7 @@ public class SueldoEmpleadoApp {
 		Mid empleadosMid[] = new Mid[5];
 		Senior empleadosSenior[] = new Senior[5];
 		
-		empleadosJunior[0] = new Junior(2000, "Raquel", 1200, "employee");
+		empleadosJunior[0] = new Junior(2000, "Raquel", 1200, "EMPLOYEE");
 		empleadosJunior[1] = new Junior(2001, "Marta", 1000, "employee");
 		empleadosJunior[2] = new Junior(2002, "Jose", 1100, "employee");
 		empleadosJunior[3] = new Junior(2003, "Alvaro", 1400, "employee");

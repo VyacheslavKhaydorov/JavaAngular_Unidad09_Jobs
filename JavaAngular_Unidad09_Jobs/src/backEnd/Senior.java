@@ -14,7 +14,7 @@ class Senior extends Empleado{
 
 	//constantes
 	 
-	protected double REDUCCION_SENIOR = 10 / 100;
+	protected double REDUCCION_SENIOR = 5 / 100;
 			
 			
 	//constructor		
