@@ -21,7 +21,7 @@ class Senior extends Empleado{
 			
 	public Senior(int ID, String nombre, double sueldo, String categoria) {
 		super(ID, nombre, sueldo, categoria);
-		sueldo += sueldo * REDUCCION_SENIOR;
+		this.sueldo += this.sueldo * REDUCCION_SENIOR;
 			
 	}
 

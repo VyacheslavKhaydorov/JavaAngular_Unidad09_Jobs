@@ -20,7 +20,7 @@ class Junior extends Empleado {
 	//constructor
 	public Junior(int ID, String nombre, double sueldo, String categoria) {
 		super(ID, nombre, sueldo, categoria);
-		// TODO Auto-generated constructor stub
+		this.sueldo += this.sueldo * REDUCCION_JUNIOR;
 	}
 	
 }
