@@ -4,36 +4,26 @@
 package backEnd;
 
 /**
- * @author viach
+ * @author 	Cesar Torrelles
+ * 			Ingrid DOminguez
+ * 			Vyacheslav Khaydorov
  *
  */
 class Senior extends Empleado{
 	
-	
-
-	
 
 	//constantes
 	 
-	protected double reduccionSenior;
+	protected double REDUCCION_SENIOR = 10 / 100;
 			
 			
 	//constructor		
 			
-	public Senior(int ID, String nombre, double sueldo, String categoria, double reduccionSenior) {
-		super(ID, nombre, sueldo, categoria);		
+	public Senior(int ID, String nombre, double sueldo, String categoria) {
+		super(ID, nombre, sueldo, categoria);
+		sueldo += sueldo * REDUCCION_SENIOR;
 			
-}
-
-
-	public double getReduccionSenior() {
-		return reduccionSenior;
 	}
 
-
-	public void setReduccionSenior(double reduccionSenior) {
-		this.reduccionSenior = reduccionSenior;
-	}
-	
 	
 }

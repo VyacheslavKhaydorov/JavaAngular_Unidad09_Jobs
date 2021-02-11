@@ -4,12 +4,13 @@
 package backEnd;
 
 /**
- * @author viach
+ * @author 	Cesar Torrelles
+ * 			Ingrid DOminguez
+ * 			Vyacheslav Khaydorov
  *
  */
 public class SueldoEmpleadoApp {
-	
-	
+		
 	
 	public static void main(String[] args) {
 		//Definimos unos vectores de prueba
@@ -17,17 +18,17 @@ public class SueldoEmpleadoApp {
 		Mid empleadosMid[] = new Mid[10];
 		Senior empleadosSenior[] = new Senior[10];
 		
-		empleadosJunior[0] = new Junior(2000, "Raquel", 1200, "employee", 8);
-		empleadosJunior[1] = new Junior(2001, "Marta", 1000, "employee", 9);
-		empleadosJunior[2] = new Junior(2002, "Jose", 1100, "employee", 7);
-		empleadosJunior[3] = new Junior(2003, "Alvaro", 1400, "employee", 8);
-		empleadosJunior[4] = new Junior(2004, "Miguel", 900, "volunteer", 5);
+		empleadosJunior[0] = new Junior(2000, "Raquel", 1200, "employee");
+		empleadosJunior[1] = new Junior(2001, "Marta", 1000, "employee");
+		empleadosJunior[2] = new Junior(2002, "Jose", 1100, "employee");
+		empleadosJunior[3] = new Junior(2003, "Alvaro", 1400, "employee");
+		empleadosJunior[4] = new Junior(2004, "Miguel", 900, "volunteer");
 		
-		empleadosMid[5] = new Mid(3000, "Alba", 1800, "employee", 4);
-		empleadosMid[6] = new Mid(3001, "Lucia", 1900, "employee", 10);
-		empleadosMid[7] = new Mid(3002, "Edgard", 1900, "employee", 4);
-		empleadosMid[8] = new Mid(3003, "Francisco", 1800, "employee", 9);
-		empleadosMid[9] = new Mid(3004, "Ana", 2000, "manager", 7);
+		empleadosMid[5] = new Mid(3000, "Alba", 1800, "employee");
+		empleadosMid[6] = new Mid(3001, "Lucia", 1900, "employee");
+		empleadosMid[7] = new Mid(3002, "Edgard", 1900, "employee");
+		empleadosMid[8] = new Mid(3003, "Francisco", 1800, "employee");
+		empleadosMid[9] = new Mid(3004, "Ana", 2000, "manager");
 		
 		empleadosSenior[0] = new Senior(4000, "Beatriz", 2500, "employee");
 		empleadosSenior[1] = new Senior(4000, "Olga", 4200, "manager");
