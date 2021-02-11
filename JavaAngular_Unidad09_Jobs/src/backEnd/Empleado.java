@@ -1,7 +1,7 @@
 /**
  * 
  */
-package BackEnd;
+package backEnd;
 
 /**
  * @author 	Cesar Torrelles
