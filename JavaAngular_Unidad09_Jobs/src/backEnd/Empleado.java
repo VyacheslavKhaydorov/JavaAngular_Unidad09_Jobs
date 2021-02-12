@@ -83,10 +83,11 @@ public class Empleado {
 	//Metodo toString()
 	public String toString() {
 		return "ID: " + this.ID + " | Nombre: " + this.nombreEmpleado + " | Categoria: "
-				+ this.categoriaEmpleado + "\nSueldo bruto mensual: " + this.sueldoBrutoMensual
-				+ "\nSueldo neto mensual: " + this.sueldoNetoMensual
-				+ "\nSueldo bruto anual: " + this.sueldoBrutoAnual
-				+ "\nSueldo neto anual: " + this.sueldoNetoAnual;
+				+ this.categoriaEmpleado + "\nSueldo bruto mensual: "
+				+ String.format("%.2f", this.sueldoBrutoMensual)	//Mostramos solo 2 decimales
+				+ "\nSueldo neto mensual: " + String.format("%.2f", this.sueldoNetoMensual)
+				+ "\nSueldo bruto anual: " + String.format("%.2f", this.sueldoBrutoAnual)
+				+ "\nSueldo neto anual: " + String.format("%.2f", this.sueldoNetoAnual);
 	}
 	
 	
@@ -125,16 +126,17 @@ public class Empleado {
 			if (sueldo > SUELDO_MANAGER_MIN && sueldo < SUELDO_MANAGER_MAX)
 				break;
 			else
-				throw new ExcepcionSueldoFueraDeRango(sueldo + " de sueldo de manager no esta"
-						+ " dentro del rango (mayor a " + SUELDO_MANAGER_MIN + " y menor a "
+				throw new ExcepcionSueldoFueraDeRango(this.getNombreEmpleado() + " tiene "
+						+ sueldo + " de sueldo de " + categoria + ": no esta "
+						+ "dentro del rango (mayor a " + SUELDO_MANAGER_MIN + " y menor a "
 						+ SUELDO_MANAGER_MAX + ")");
 		case "BOSS":
 			if (sueldo > SUELDO_BOSS_MIN)
 				break;
-			else {
-				throw new ExcepcionSueldoFueraDeRango(sueldo + " de sueldo de " + categoria
-						+ " no esta dentro del rango (mayor a " + SUELDO_BOSS_MIN + ")");	
-			}
+			else
+				throw new ExcepcionSueldoFueraDeRango(this.getNombreEmpleado() + " tiene "
+						+ sueldo + ": de sueldo de " + categoria
+						+ " no esta dentro del rango (mayor a " + SUELDO_BOSS_MIN + ")");
 		}
 		
 	}
@@ -286,8 +288,8 @@ public class Empleado {
 	}
 
 
-	public void setIRPF(double iRPF) {
-		IRPF = iRPF;
+	public void setIRPF(double IRPF) {
+		this.IRPF = IRPF;
 	}
 
 

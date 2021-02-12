@@ -18,7 +18,7 @@ public class ArchivoEmpleados {
 		Empleado empleadoJefe = new Empleado(1002, "Julio", 8000, "BOSS");
 		
 		Empleado empleadoManager1 = new Empleado(1050, "Maria" ,6000, "manager");
-		Empleado empleadoManager2 = new Empleado(1051, "Domingo", 4000, "manager");
+		Empleado empleadoManager2 = new Empleado(1051, "Domingo", 3500, "manager");
 		
 		empleadosJunior[0] = new Junior(2000, "Raquel", 1200);
 		empleadosJunior[1] = new Junior(2001, "Marta", 1000);
@@ -41,7 +41,7 @@ public class ArchivoEmpleados {
 		//Mostramos empleados
 		System.out.println(empleadoJefe.toString());
 		System.out.println(empleadoManager1.toString());
-		System.out.println(empleadoManager1.toString());
+		System.out.println(empleadoManager2.toString());
 		
 		for (Junior empleado : empleadosJunior)
 			System.out.println(empleado.toString());

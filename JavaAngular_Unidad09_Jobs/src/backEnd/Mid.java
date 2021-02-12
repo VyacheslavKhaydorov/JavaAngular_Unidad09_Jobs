@@ -37,6 +37,28 @@ public class Mid extends Empleado {
 	}
 	
 	
+	public static int getSueldoMidMax() {
+		return SUELDO_MID_MAX;
+	}
+
+
+	public static int getSueldoMidMin() {
+		return SUELDO_MID_MIN;
+	}
+
+
+	//Metodo de control sobre el rango de sueldos
+	public void controlRangoSueldo (double sueldo, String CATEGORIA_EMPLOYEE)
+			throws ExcepcionSueldoFueraDeRango {
+		
+		if (sueldo > SUELDO_MID_MIN && sueldo < SUELDO_MID_MAX)
+			throw new ExcepcionSueldoFueraDeRango(this.getNombreEmpleado() + " tiene " + sueldo
+					+ " de sueldo de mid: no esta dentro del rango (mayor a " + SUELDO_MID_MIN + " y menor a "
+					+ SUELDO_MID_MAX + ")");
+		
+	}
+	
+		
 	//Metodo para asignar el IRPF por categoria
 	public double asignarIRPF (String categoria) {
 		

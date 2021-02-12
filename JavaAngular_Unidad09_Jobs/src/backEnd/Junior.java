@@ -37,14 +37,24 @@ public class Junior extends Empleado {
 	}
 
 
+	public static int getSueldoJuniorMax() {
+		return SUELDO_JUNIOR_MAX;
+	}
+
+
+	public static int getSueldoJuniorMin() {
+		return SUELDO_JUNIOR_MIN;
+	}
+
+
 	//Metodo de control sobre el rango de sueldos
-	public void controlRangoSueldo (double sueldo, String categoria) {
+	public void controlRangoSueldo (double sueldo, String CATEGORIA_EMPLOYEE)
+			throws ExcepcionSueldoFueraDeRango {
 		
-		/*if (sueldo > SUELDO_JUNIOR_MIN && sueldo < SUELDO_JUNIOR_MAX) {
-			throw new ExcepcionSueldoFueraDeRango(sueldo + " de sueldo de manager no esta"
-					+ " dentro del rango (mayor a " + SUELDO_JUNIOR_MIN + " y menor a "
-					+ SUELDO_JUNIOR_MAX + ")");
-		}*/
+		if (sueldo > SUELDO_JUNIOR_MIN && sueldo < SUELDO_JUNIOR_MAX)
+			throw new ExcepcionSueldoFueraDeRango(this.getNombreEmpleado() + " tiene " + sueldo
+					+ " de sueldo de junior: no esta dentro del rango (mayor a "
+					+ SUELDO_JUNIOR_MIN + " y menor a " + SUELDO_JUNIOR_MAX + ")");
 		
 	}
 	

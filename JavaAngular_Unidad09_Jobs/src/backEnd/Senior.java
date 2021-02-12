@@ -37,6 +37,28 @@ public class Senior extends Empleado{
 	}
 	
 	
+	public static int getSueldoSeniorMax() {
+		return SUELDO_SENIOR_MAX;
+	}
+
+
+	public static int getSueldoSeniorMin() {
+		return SUELDO_SENIOR_MIN;
+	}
+
+
+	//Metodo de control sobre el rango de sueldos
+	public void controlRangoSueldo (double sueldo, String CATEGORIA_EMPLOYEE)
+			throws ExcepcionSueldoFueraDeRango {
+		
+		if (sueldo > SUELDO_SENIOR_MIN && sueldo < SUELDO_SENIOR_MAX)
+			throw new ExcepcionSueldoFueraDeRango(this.getNombreEmpleado() + " tiene "
+					+ sueldo + " de sueldo de senior: no esta dentro del rango (mayor "
+					+ "a " + SUELDO_SENIOR_MIN + " y menor a " + SUELDO_SENIOR_MAX + ")");
+		
+	}
+	
+	
 	//Metodo para asignar el IRPF por categoria
 	public double asignarIRPF (String categoria) {
 		
