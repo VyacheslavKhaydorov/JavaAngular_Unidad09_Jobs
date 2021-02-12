@@ -4,6 +4,7 @@
 package backEnd;
 
 import javax.swing.JOptionPane;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author 	Cesar Torrelles
@@ -42,9 +43,16 @@ public class Empleado {
 	protected double sueldoNetoAnual;
 	protected String categoriaEmpleado;
 	protected double IRPF;
+	protected double sueldoExtra;
+	protected boolean tenemosBonus;
 	
 	
 	//Constructores
+	public Empleado() {
+		
+	}
+	
+	
 	public Empleado(int ID, String nombre, double sueldo, String categoria) {
 		this.ID = ID;
 		this.nombreEmpleado = nombre;
@@ -75,6 +83,9 @@ public class Empleado {
 		
 		//Llamada al metodo calcularSueldoNetoAnual
 		this.sueldoNetoAnual = calcularSueldoNetoAnual(this.sueldoBrutoMensual, this.IRPF);
+		
+		//Llamada al metodo bonus
+		this.sueldoExtra = bonus(this.sueldoBrutoAnual, tenemosBonus);
 	
 	}
 
@@ -87,7 +98,8 @@ public class Empleado {
 				+ String.format("%.2f", this.sueldoBrutoMensual)	//Mostramos solo 2 decimales
 				+ "\nSueldo neto mensual: " + String.format("%.2f", this.sueldoNetoMensual)
 				+ "\nSueldo bruto anual: " + String.format("%.2f", this.sueldoBrutoAnual)
-				+ "\nSueldo neto anual: " + String.format("%.2f", this.sueldoNetoAnual);
+				+ "\nSueldo neto anual: " + String.format("%.2f", this.sueldoNetoAnual)
+				+ "\nBonus: " + String.format("%.2f", this.sueldoExtra);
 	}
 	
 	
@@ -209,6 +221,34 @@ public class Empleado {
 		
 		return sueldoNetoAnual;
 		
+	}
+	
+	
+	// Metodo para sumar el bonus al sueldoBrutoAnual
+	public double bonus(double sueldoBrutoAnual, boolean tenemosBonus) {
+
+		double sueldoExtra = sueldoBrutoAnual;
+		
+		if (tenemosBonus)
+			sueldoExtra += sueldoBrutoAnual * 0.10;
+		
+
+		return sueldoExtra;
+
+	}
+	
+	
+	//Metodo para realizar una ayuda salarial
+	public double ayudaSalarial (double sueldo, String categoria) {
+
+		if (categoria.toUpperCase().equals("VOLUNTEER")) {
+			//Generamos un valor aleatorio entre 1 y 300
+			 double ayudaSalarial = ThreadLocalRandom.current().nextInt(1, 300 + 1);
+			 sueldo = ayudaSalarial;
+		}
+			
+		return sueldo;
+
 	}
 
 
@@ -370,6 +410,26 @@ public class Empleado {
 
 	public static int getNumeroPagas() {
 		return NUMERO_PAGAS;
+	}
+
+
+	public double getSueldoExtra() {
+		return sueldoExtra;
+	}
+
+
+	public void setSueldoExtra(double sueldoExtra) {
+		this.sueldoExtra = sueldoExtra;
+	}
+
+
+	public boolean getTenemosBonus() {
+		return tenemosBonus;
+	}
+
+
+	public void setTenemosBonus(boolean tenemosBonus) {
+		this.tenemosBonus = tenemosBonus;
 	}
 	
 	
