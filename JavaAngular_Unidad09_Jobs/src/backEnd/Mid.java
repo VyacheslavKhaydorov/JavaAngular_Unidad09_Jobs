@@ -9,7 +9,7 @@ package backEnd;
  * 			Vyacheslav Khaydorov
  *
  */
-class Mid extends Empleado {
+public class Mid extends Empleado {
 	
 	//constantes
 	protected final double REDUCCIN_MID = 0.1;

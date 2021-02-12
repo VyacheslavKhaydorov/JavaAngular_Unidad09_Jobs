@@ -9,7 +9,7 @@ package backEnd;
  * 			Vyacheslav Khaydorov
  *
  */
-class Senior extends Empleado{
+public class Senior extends Empleado{
 
 	//Constantes
 	protected final double REDUCCION_SENIOR = 0.05;

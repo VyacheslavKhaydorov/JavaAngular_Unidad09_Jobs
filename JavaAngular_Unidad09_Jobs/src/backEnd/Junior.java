@@ -10,7 +10,7 @@ package backEnd;
  *
  */
 
-class Junior extends Empleado {
+public class Junior extends Empleado {
 	
 	//constantes
 	protected final double REDUCCION_JUNIOR = 0.15;
