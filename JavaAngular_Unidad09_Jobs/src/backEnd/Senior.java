@@ -33,6 +33,16 @@ public class Senior extends Empleado{
 	public double getIRPF_SENIOR() {
 		return IRPF_SENIOR;
 	}
+	
+	
+	//Metodo para asignar el IRPF por categoria
+	public double asignarIRPF (String categoria) {
+		
+		double IRPF = IRPF_SENIOR;
+		
+		return IRPF;
+		
+	}
 
 	
 }

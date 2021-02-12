@@ -151,7 +151,6 @@ public class Empleado {
 				break;
 			case "BOSS":
 				IRPF = IRPF_BOSS;
-				break;
 		}
 		
 		return IRPF;

@@ -46,16 +46,7 @@ public class Junior extends Empleado {
 	//Metodo para asignar el IRPF por categoria
 	public double asignarIRPF (String categoria) {
 		
-		double IRPF = 0;
-		
-		switch (categoria) {
-			case "MANAGER":
-				IRPF = IRPF_MANAGER;
-				break;
-			case "BOSS":
-				IRPF = IRPF_BOSS;
-				break;
-		}
+		double IRPF = IRPF_JUNIOR;
 		
 		return IRPF;
 		

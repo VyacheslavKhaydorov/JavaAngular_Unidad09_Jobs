@@ -33,5 +33,15 @@ public class Mid extends Empleado {
 	public double getIRPF_MID() {
 		return IRPF_MID;
 	}
+	
+	
+	//Metodo para asignar el IRPF por categoria
+	public double asignarIRPF (String categoria) {
+		
+		double IRPF = IRPF_MID;
+		
+		return IRPF;
+		
+	}
 
 }
