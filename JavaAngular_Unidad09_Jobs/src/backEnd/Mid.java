@@ -13,6 +13,8 @@ public class Mid extends Empleado {
 	
 	//constantes
 	protected final double REDUCCIN_MID = 0.1;
+	protected final static int SUELDO_MID_MAX = 2500;
+	protected final static int SUELDO_MID_MIN = 1800;
 	protected final double IRPF_MID = 0.15;
 	
 
