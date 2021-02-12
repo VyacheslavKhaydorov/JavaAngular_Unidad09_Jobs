@@ -14,6 +14,8 @@ public class Junior extends Empleado {
 	
 	//constantes
 	protected final double REDUCCION_JUNIOR = 0.15;
+	protected final static int SUELDO_JUNIOR_MAX = 1600;
+	protected final static int SUELDO_JUNIOR_MIN = 900;
 	protected final double IRPF_JUNIOR = 0.02;
 
 	
@@ -38,7 +40,11 @@ public class Junior extends Empleado {
 	//Metodo de control sobre el rango de sueldos
 	public void controlRangoSueldo (double sueldo, String categoria) {
 		
-		
+		/*if (sueldo > SUELDO_JUNIOR_MIN && sueldo < SUELDO_JUNIOR_MAX) {
+			throw new ExcepcionSueldoFueraDeRango(sueldo + " de sueldo de manager no esta"
+					+ " dentro del rango (mayor a " + SUELDO_JUNIOR_MIN + " y menor a "
+					+ SUELDO_JUNIOR_MAX + ")");
+		}*/
 		
 	}
 	
