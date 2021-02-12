@@ -1,7 +1,9 @@
 /**
  * 
  */
-package backEnd;
+package models;
+
+import backEnd.ExcepcionSueldoFueraDeRango;
 
 /**
  * @author 	Cesar Torrelles

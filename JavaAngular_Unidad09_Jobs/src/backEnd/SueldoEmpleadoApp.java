@@ -5,6 +5,8 @@ package backEnd;
 
 import java.util.Scanner;
 
+import frontEnd.ArchivoEmpleados;
+
 /**
  * @author 	Cesar Torrelles
  * 			Ingrid DOminguez

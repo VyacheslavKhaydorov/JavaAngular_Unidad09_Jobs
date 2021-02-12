@@ -1,11 +1,17 @@
 /**
  * 
  */
-package backEnd;
+package frontEnd;
+
+import models.Empleado;
+import models.Junior;
+import models.Mid;
+import models.Senior;
 
 /**
- * @author viach
- *
+ * @author Cesar Torrelles
+ * 			Ingrid DOminguez
+ * 			Vyacheslav Khaydorov
  */
 public class ArchivoEmpleados {
 	

@@ -4,8 +4,9 @@
 package backEnd;
 
 /**
- * @author viach
- *
+ * @author Cesar Torrelles
+ * 			Ingrid DOminguez
+ * 			Vyacheslav Khaydorov
  */
 public class ExcepcionSueldoFueraDeRango extends Exception {
 

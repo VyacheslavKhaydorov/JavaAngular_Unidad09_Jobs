@@ -1,9 +1,12 @@
 /**
  * 
  */
-package backEnd;
+package models;
 
 import javax.swing.JOptionPane;
+
+import backEnd.ExcepcionSueldoFueraDeRango;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
