@@ -3,6 +3,8 @@
  */
 package backEnd;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -90,7 +92,7 @@ public class Empleado {
 	}
 	
 	
-	//Método para ajustar el sueldoBrutoMensual según la categoriaEmpleado
+	//Mï¿½todo para ajustar el sueldoBrutoMensual segï¿½n la categoriaEmpleado
 	public double sueldoAjustadoPorCategoria (double sueldo, String categoria) {
 		
 		switch (categoria) {
@@ -188,15 +190,23 @@ public class Empleado {
 		return sueldoNetoMensual;
 		
 	}
-	
-	
-	//Metodo para calcular el sueldoBrutoAnual
+
+	// Metodo para calcular el sueldoBrutoAnual
 	public double calcularSueldoBrutoAnual(double sueldoBrutoMensual) {
-		
+
 		sueldoBrutoAnual = sueldoBrutoMensual * NUMERO_PAGAS;
-		
+
 		return sueldoBrutoAnual;
-				
+
+	}
+
+	// Metodo para sumar el bonus al sueldoBrutoAnual
+	public double bouns(double sueldoBrutoAnual) {
+
+		sueldoBrutoAnual += sueldoBrutoAnual * 0.10;
+
+		return sueldoBrutoAnual;
+
 	}
 	
 	
@@ -208,6 +218,29 @@ public class Empleado {
 		return sueldoNetoAnual;
 		
 	}
+	
+	//Metodo para realizar una ayuda salarial
+	
+	public double ayudaSalarial (double sueldo, String categoria) {
+		
+		
+		
+		//Generamos un valor aleatorio entre 1 y 300
+		 double ayudaSalarial = ThreadLocalRandom.current().nextInt(1, 300 + 1);
+				
+		if (categoria.toUpperCase().equals("VOLUNTEER")) {
+		
+			sueldo = ayudaSalarial;
+	}
+
+		return sueldo;
+		
+		
+		
+	}
+	
+	
+	
 
 
 	//Getters y setters
