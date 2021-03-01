@@ -1,13 +1,23 @@
 # JavaAngular_Unidad09_Jobs
-Actividad Jobs de la unidad 09 del curso Java y Angular
 
-Autores:
-Cesar Torrelles
-Ingrid Dominguez
-Vyacheslav Khaydorov
+### Equipo de desarrollo:
 
-PENDIENTE:
--300 euros de ayuda para los voluntarios
--Aumento del sueldo del 10 sobre el anual para cada empleado
--Extender los métodos controlRangoSueldo (ahora es void y manda un mensaje a la nueva clase excepcion) y asignarIRPF a las subclases Empleado
--No tan prioritario --> Organizacion: main debe quedar limpio, hay que meter los arrays de objetos en otro sitio
+| Developer | Rama | Rol | Fecha Incorporación | Proyecto | Versión |
+| --- | :---:  | :---:  | :---:  | :---: | :---:  |
+| Ingrid Dominguez | Dev 1 | FullStack Developer | 01/02/2021 | UD9-M  | 1.0  |
+| Cesar Torrelles | Dev 2 | FullStack Developer | 01/02/2021 | UD9-M  | 1.0  | 
+| Vyacheslav Khaydorov | Dev 3 | FullStack Developer| 01/02/2021 | UD9-M  | 1.0  |
+
+### 1. Descripción:
+
+Ejercicio M-2 relacionado con la herencia en JAVA.
+
+### 2. Link a un demo con el proyecto desplegado:
+```
+https://github.com/VyacheslavKhaydorov/JavaAngular_Unidad09_Jobs
+```
+### 3. Lista de herramientas para poder ejecutarlo:
+```
+- Java Version 1.8.0_281
+- Eclipse Version: 2020-12 (4.18.0)
+```
