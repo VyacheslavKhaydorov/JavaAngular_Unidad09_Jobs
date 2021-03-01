@@ -18,6 +18,6 @@ https://github.com/VyacheslavKhaydorov/JavaAngular_Unidad09_Jobs
 ```
 ### 3. Lista de herramientas para poder ejecutarlo:
 ```
-- Java Version 1.8.0_281
+- JDK 15.0.2
 - Eclipse Version: 2020-12 (4.18.0)
 ```
